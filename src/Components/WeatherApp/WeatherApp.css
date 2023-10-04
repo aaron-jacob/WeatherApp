@@ -1,0 +1,138 @@
+.container {
+    max-width: 30rem;
+    height: 43rem;
+    margin: auto;
+    margin-top: 2.5rem; 
+    border-radius: 0.5rem; 
+    background-image: linear-gradient(180deg, #130754 25%, #3b2f80 75%);
+}
+
+.top-bar {
+    display: flex;
+    margin-left: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem; 
+    padding-top: 1.875rem; 
+}
+
+.top-bar input {
+    flex: 1;
+    height: 3.125rem; 
+    background: #ebfffc;
+    border: none;
+    outline: none;
+    border-radius: 1.875rem; 
+    padding-left: 1.875rem; 
+    color: #626262;
+    font-size: 1.35rem; 
+    font-weight: 400;
+    margin-right: 1rem; 
+}
+
+.search-icon {
+    display: flex;
+    margin-right: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    width: 3.125rem; 
+    height: 3.125rem; 
+    background: #ebfffc;
+    border-radius: 1.875rem; 
+    cursor: pointer;
+}
+
+.weather-image {
+    margin-top: 1.125rem; 
+    display: flex;
+    justify-content: center;
+}
+
+.weather-temp {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 4.5rem; 
+    font-weight: 400;
+}
+
+.weather-location {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem; 
+    font-weight: 400;
+}
+
+.data-container {
+    margin-top: 2.5rem; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.element {
+    margin: 1rem; 
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem; 
+}
+
+.data {
+    font-size: 1.5rem; 
+    font-weight: 400;
+}
+
+.text {
+    font-size: 1rem; 
+    font-weight: 400;
+}
+
+.icon {
+    margin-top: 0.4rem; 
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 48rem) {
+
+    body {
+        background-color: #130754;
+      }
+    .container {
+        border-radius: 0;
+    }
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem; 
+    }
+    .top-bar input {
+        width: 70%;
+        margin-right: 0;
+    }
+    .search-icon {
+        margin-top: 0.5rem; 
+        align-items: center;
+    }
+    .weather-temp {
+        font-size: 3rem; 
+    }
+    .weather-location {
+        font-size: 1.5rem; 
+    }
+    .element {
+        margin: 0.3125rem; 
+        gap: 0.25rem; 
+        margin-right: 1rem;
+    }
+    .data {
+        font-size: 1rem; 
+    }
+    .text {
+        font-size: 0.875rem; 
+    }
+    .icon {
+        margin-top: 0.15625rem; 
+    }
+}
